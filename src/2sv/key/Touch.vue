@@ -57,7 +57,8 @@ export default {
             type: 'public-key',
             alg: -7 // https://www.iana.org/assignments/cose/cose.xhtml#algorithms
           }
-        ]
+        ],
+        attestation: 'direct' // this causes additional interactions in the browser.
       }
     })
     console.log(this.credential.response)
